@@ -60,7 +60,7 @@ def generate_questions(resume_text, language="English"):
         model="gpt-4o-mini",
         messages=[{"role": "user", "content": prompt}],
         temperature=0.7,
-        max_tokens=1500
+        max_tokens=1000
     )
 
     return response.choices[0].message.content
